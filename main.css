@@ -5,16 +5,19 @@
 }
 
 body {
-    background-image: linear-gradient(120deg,#d785e7, #abb0f3);
-    color: white;
+    background-image: url('img/background.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(114, 185, 164);
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
 
 header {
-    font-size: 1.5rem;
-    font-family: 'Lobster', cursive;
-
+    font-size: 2.5em;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 5px 5px 5px white;
 }
 
 header, form {
@@ -70,14 +73,14 @@ form button:hover {
 }
 
 .trash-btn, .complete-btn {
-    background: #ff6f47;
+    background: #d88771;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
 }
 .complete-btn {
-    background: rgb(73, 204, 73);
+    background: rgb(114, 185, 164);
 }
 
 .todo-item {
@@ -113,7 +116,7 @@ select {
 }
 
 select {
-    color: #ff6f47;
+    color: #d88771;
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
@@ -122,7 +125,7 @@ select {
 .select::after {
     content: "\25BC";
     position: absolute;
-    background: #ff6f47;
+    background: #d88771;
     top: 0;
     right: 0;
     padding: 1rem;
@@ -132,5 +135,5 @@ select {
 
 .select:hover::after {
     background: white;
-    color: #ff6f47;
+    color: #d88771;
 }
